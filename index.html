@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Havenly</title>
+	<link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<!-- Black Stripe -->
+	<div class="container-fluid bStripe">
+		<h6 class="mb-0"><span id="start-text">Ready to get started?</span><i class="fa fa-chevron-up" id="start-button" tag="more" style="float: right; cursor: pointer;"></i></h6>
+		<div id="start-details" style="display: none;">
+			<br>
+			<div class="row">
+				<div class="col-md-6 d-none d-md-block">
+					<h4>Ready to get started?</h4>
+					<p class="mb-0">Have questions? <span style="text-decoration: underline;">Go to our FAQs</span></p>
+				</div>
+				<div class="offset-md-1 col-md-2 mb-3 my-md-auto text-center col-12">
+					<a href="#" style="color: #fff;">Buy a package now</a>
+				</div>
+				<div class="col-md-3 col-12 text-center">
+					<button class="custom-button">Find your style</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-sm fixed-top">
+    	<div class="container">
+        	<a href="#" class="navbar-brand">
+        		<img src="img/logo.png" alt="logo" class="img-fluid" style="width: 200px; height: 50px;">
+        	</a>
+        	<a class="navbar-toggler" onclick="openNav()">☰</a>
+        	<div class="navbar-collapse collapse">
+            	<ul class="navbar-nav">
+            		<li class="nav-item dropdown">
+						<a class="nav-link mx-3">How It Works</a>
+						<div class="dropdown-menu border-0 rounded-0">
+							<a class="dropdown-item" href="#">The Details</a>
+							<a class="dropdown-item" href="#">Pricing</a>
+							<a class="dropdown-item" href="#">Reviews</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link mx-3">Explore</a>
+						<div class="dropdown-menu border-0 rounded-0">
+							<a class="dropdown-item" href="#">Projects</a>
+							<a class="dropdown-item" href="#">Designers</a>
+							<a class="dropdown-item" href="#">Style Quiz</a>
+							<a class="dropdown-item" href="#">Stories</a>
+						</div>
+					</li>
+                	<li class="nav-item"><span class="nav-link mx-3"><a href="#">Login</a> <span class="mx-2">|</span> <a href="#">Signup</a></span></li>
+            	</ul>
+            	<ul class="ml-auto navbar-nav">
+                	<li class="nav-item"><a href="#" class="nav-link" id="collaborate" style="color: #CC9F88;"></a></li>
+            	</ul>
+        	</div>
+    	</div>
+	</nav>
+
+	<!-- Mobile Side Menu -->
+	<div class="sideNavMenu" id="sideNav">
+		<div class="row p-3">
+			<div class="col-10">
+				<img src="img/logo.png" alt="logo" class="img-fluid" style="width: 200px; height: 50px;">		
+			</div>
+			<div class="col-2 my-auto">
+				<button class="border-0 bg-white" onclick="closeNav()"><i class="fas fa-times fa-lg text-center"></i></button>				
+			</div>
+		</div>
+		<div class="px-3">
+			<hr style="background-color: #000;">
+			<h6 class="mb-3"><b>How it works</b></h5>
+			<p>The Details</p>
+			<p>Pricing</p>
+			<p>Reviews</p>
+		</div>
+		<div class="px-3">
+			<hr style="background-color: #000; padding: 0.03rem;">
+			<h6 class="mb-3"><b>Explore</b></h5>
+			<p>Projects</p>
+			<p>Designers</p>
+			<p>Style Quiz</p>
+			<p>Stories</p>
+		</div>
+		<div class="px-3">
+			<hr style="background-color: #000;">
+			<p class="mb-3"><b>Login | Signup</b></p>
+			<p style="text-decoration: underline;">Help</p>
+		</div>
+	</div>
+
+	<!-- Home Slider -->
+	<div class="home-slider">
+		<div class="slider" style="background-image: url('img/slider1.jpg'); ">
+			<h1>I <span class="slider-underline">just moved</span> and need <span class="slider-underline">a living room</span> that makes me feel at home.</h1>
+			<br>
+			<button class="custom-button shadow"><b>Find your style</b></button>
+		</div>
+		<div class="slider" style="background-image: url('img/slider2.jpg');">
+			<h1>I have all my <span class="slider-underline">big items</span>, but I want to <span class="slider-underline">pull it all together</span>.</h1>
+			<br>
+			<button class="custom-button shadow"><b>Find your style</b></button>
+		</div>
+		<div class="slider" style="background-image: url('img/slider3.jpg');">
+			<h1>I need to <span class="slider-underline">furnish</span> my <span class="slider-underline">new house</span> on a <span class="slider-underline">realistic budget</span>.</h1>
+			<br>
+			<button class="custom-button shadow"><b>Find your style</b></button>
+		</div>
+		<div class="slider" style="background-image: url('img/slider4.jpg');">
+			<h1>I want to <span class="slider-underline">redesign my home</span>, but don’t know <span class="slider-underline">where to begin</span>.</h1>
+			<br>
+			<button class="custom-button shadow"><b>Find your style</b></button>
+		</div>
+		<div class="slider" style="background-image: url('img/slider5.jpg');">
+			<h1>My home is <span class="slider-underline">almost put together,</span> but I could <span class="slider-underline">really use a new rug.</span></h1>
+			<br>
+			<button class="custom-button shadow"><b>Find your style</b></button>
+		</div>
+	</div>
+
+
+	<!-- Featured In -->
+	<div class="container-fluid" id="featured" style="position: relative;">
+		<img src="img/arrow.png" alt="arrow" class="arrow">
+		<div class="row">
+			<div class="col-md-4 p-md-5 p-4 overlay-box" style="background-color: #faefe6;">
+				<img src="img/circle.png" alt="circle" class="img-fluid">
+				<h5 class="d-block d-md-none text-center"><br>Our Happiness Guarantee:<br>You will love your Havenly experience or your money back. It’s as simple as that.</h5>
+				<div class="overlay">
+    				<div class="overlay-text">Our Happiness Guarantee:<br>You will love your Havenly experience or your money back. It’s as simple as that.</div>
+  				</div>
+			</div>
+			<div class="col-md-8 p-md-5 p-4 my-auto">
+				<div class="feature-slider">
+					<div class="px-3">
+						<h2 class="mb-md-5 mb-3">"Imagine if you could hire someone to scour your Pinterest boards and translate your pins into a perfectly decorated room in your home."</h2>
+					</div>
+					<div class="px-3">
+						<h2 class="mb-md-5 mb-3">"Havenly — offering services that were affordable for everyone."</h2>
+					</div>
+					<div class="px-3">
+						<h2 class="mb-md-5 mb-3">"If you’ve always dreamed of a glamorous home makeover experience but haven’t had the interior designer budget to go along with it, then you’re in luck."</h2>
+					</div>
+					<div class="px-3">
+						<h2 class="mb-md-5 mb-3">"These Havenly interior designers nailed it."</h2>
+					</div>
+					<div class="px-3">
+						<h2 class="mb-md-5 mb-3">"Unlike [Laurel & Wolf] though, we actually loved everything we saw from Havenly."</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Process -->
+	<div class="container-fluid p-md-5 p-4" style="background-color: #EEEEEE;">
+		<div class="row">
+			<div class="col-md-8 col-12">
+				<h1><b>Even Simpler Than You Think</b></h1>
+			</div>
+			<div class="col-md-4 d-none d-md-block">
+				<a href="#" style="text-decoration: underline; float: right;">See us in a motion <i class="fas fa-play-circle fa-3x ml-3 align-middle"></i></a>
+			</div>
+		</div>
+		<br><br><br>
+		<div class="row">
+			<div class="col-md-4 mb-md-0 mb-3">
+				<div class="text-center">
+					<i class="fas fa-list fa-10x"></i>
+				</div>
+				<br><br>
+				<h2>1.</h2>
+				<br>
+				<h6 class="mb-3"><b>Tell us what you need</b></h6>
+				<p>Pick a room, set your budget and tell us about your Pinterest worthy dreams – whether a full overhaul, or just some ideas to pull it together.</p>
+			</div>
+			<div class="col-md-4 mb-md-0 mb-3">
+				<div class="text-center">
+					<i class="fas fa-globe fa-10x"></i>
+				</div>
+				<br><br>
+				<h2>2.</h2>
+				<br>
+				<h6 class="mb-3"><b>Collaborate online</b></h6>
+				<p>Put on the stretchy pants, grab a glass of wine, and hop online. Select your Havenly designer and work one-on-one throughout the entire process to find stylish solutions that fit your style and budget.</p>
+			</div>
+			<div class="col-md-4">
+				<div class="text-center">
+					<i class="fas fa-couch fa-10x"></i>
+				</div>
+				<br><br>
+				<h2>3.</h2>
+				<br>
+				<h6 class="mb-3"><b>Get the V.I.P. treatment</b></h6>
+				<p>Our concierge team works directly with you to provide instant access to hundreds of brands. We take care of ordering and shipping too, so you can focus on important things, like binge watching 20 episodes of The Great British Baking Show.</p>
+			</div>
+		</div>
+		<br><br>
+		<div class="container d-block d-md-none">
+			<a href="#" style="text-decoration: underline;">See us in a motion <i class="fas fa-play-circle fa-3x ml-3 align-middle"></i></a>
+		</div>
+	</div>
+
+	<!-- Packages -->
+	<div class="container-fluid p-4">
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-md-4 mb-md-0 mb-5">
+				<div class="shadow p-4">
+					<h3><b>Havenly Mini</b></h3>
+					<hr style="background-color: #000; padding: 0.05rem;">
+					<br>
+					<div class="row align-items-center">
+						<div class="col-md-4 mb-md-0 mb-3 text-center price-box">
+							<h5 style="text-decoration: line-through;">$99</h5>
+							<h1>$79</h1>
+						</div>
+						<div class="col-md-8 des-box">
+							<p class="mb-0">Get design inspiration and custom solutions to spice up your space or refresh a room.</p>
+						</div>
+					</div>
+					<br><br>
+					<img src="img/package1.jpg" alt="package1" class="img-fluid">
+					<div class="my-4 text-center">
+						<button class="custom-button shadow">Get started with mini</button>
+					</div>
+					<br>
+					<span id="details-button1" style="cursor: pointer;" tag="more">More details<i class="fas fa-chevron-down ml-2"></i></span>
+					<br><br>
+					<div style="display: none;" id="more-details1">
+						<span>Choose your personal Havenly Designer</span>
+						<hr>
+						<span>1:1 time your designer via online messaging, SMS or phone calls</span>
+						<hr>
+						<span>3 initial ideas to help capture your style, delivered within 2 days</span>
+						<hr>
+						<span>A final design concept with curated design picks and a shopping list</span>
+						<hr>
+						<span>Multiple design revisions until it’s perfect</span>
+						<hr>
+						<span>Access to hundreds of brands and a personal ordering team</span>
+					</div>
+				</div>
+			</div>
+			<div class="offset-md-1 col-md-4">
+				<div class="shadow p-4">
+					<img src="img/yeah.png" alt="yeah" class="img-fluid yeah d-none d-md-block">
+					<h3><b>Havenly Full</b><small style="font-size: 1rem; margin-left: 0.5rem; color: #BA7D5D;">Most Popular</small></h3>
+					<hr style="background-color: #000; padding: 0.05rem;">
+					<br>
+					<div class="row align-items-center">
+						<div class="col-md-4 mb-md-0 mb-3 text-center price-box">
+							<h5 style="text-decoration: line-through;">$179</h5>
+							<h1>$129</h1>
+						</div>
+						<div class="col-md-8 des-box">
+							<p class="mb-0">Collaborate with Havenly to transform a blank canvas or redesign an entire room.</p>
+						</div>
+					</div>
+					<br><br>
+					<img src="img/package2.jpg" alt="package2" class="img-fluid">
+					<div class="my-4 text-center">
+						<button class="custom-button shadow" style="background-color: #000; color: #fff;">Get started with full</button>
+					</div>
+					<br>
+					<span id="details-button2" style="cursor: pointer;" tag="more">More details<i class="fas fa-chevron-down ml-2"></i></span>
+					<br><br>
+					<div style="display: none;" id="more-details2">
+						<span>Choose your personal Havenly Designer</span>
+						<hr>
+						<span>1:1 time your designer via online messaging, SMS or phone calls</span>
+						<hr>
+						<span>3 initial ideas to help capture your style, delivered within 2 days</span>
+						<hr>
+						<span>A final design concept with curated design picks and a shopping list</span>
+						<hr>
+						<span>Multiple design revisions until it’s perfect</span>
+						<hr>
+						<span>Access to hundreds of brands and a personal ordering team</span>
+						<hr>
+						<span>Layout visualizations so you don’t have to imagine the design</span>
+						<hr>
+						<span>Custom floor plan to take the guesswork out of layouts</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="row">
+			<div class="col-md-1 col-2 pr-md-0">
+				<i class="fas fa-phone fa-2x"></i>
+			</div>
+			<div class="col-md col pl-md-0">
+				<span>Need help with next steps, selecting the right design package or a designer?</span>
+				<br>
+				<a href="#" style="text-decoration: underline;">Schedule a call with a real human!</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Banner 1 -->
+	<div class="container-fluid parallax" style="background-image: url('img/full-bleed-image-2.jpg');"></div>
+
+	<!-- Quiz -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 p-md-5 p-4">
+				<h6 style="color: #B57452"><b>Style quiz</b></h6>
+				<br>
+				<i class="fas fa-hand-paper fa-2x"></i>
+				<br><br>
+				<h1><b>Which one are you? We’ll help you find your style!</b></h1>
+				<br><br>
+				<h5>Let us do what we do best – get to know you and your unique style.</h5>
+				<br><br><br><br>
+				<button class="custom-button shadow" style="background-color: #000; color: #fff;">Take the style quiz</button>
+			</div>
+			<div class="col-md-6 py-5" style="background-color: #F6F6F6;">
+				<div class="quiz-slider">
+					<div class="p-3">
+						<img src="img/boho.jpg" alt="boho" class="img-fluid" style="border-radius: 20px;">
+						<br>
+						<h5 class="ml-3">Boho</h5>
+					</div>
+					<div class="p-3">
+						<img src="img/calicool.jpg" alt="calicool" class="img-fluid" style="border-radius: 20px;">
+						<br>
+						<h5 class="ml-3">Calicool</h5>
+					</div>
+					<div class="p-3">
+						<img src="img/classic.jpg" alt="classic" class="img-fluid" style="border-radius: 20px;">
+						<br>
+						<h5 class="ml-3">Classic</h5>
+					</div>
+					<div class="p-3">
+						<img src="img/coastal.jpg" alt="coastal" class="img-fluid" style="border-radius: 20px;">
+						<br>
+						<h5 class="ml-3">Coastal</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Designers Reviews -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 design-image" style="background-image: url('img/homepage-project-0.jpg'); background-position: center; background-size: cover; min-height: 500px;">
+			</div>
+			<div class="col-md-4 p-md-5 p-4" style="background-color: #FAEFE6;">
+				<div class="row">
+					<div class="col-8">
+						<h1>Mind if we show off?</h1>
+						<br>
+						<h6><b>Designed by <span class="designer-name" style="text-decoration: underline;">Amy Fasnacht</span></b></h6>
+						<h6><b>for <span class="customer-name">Blake F.</span></b></h6>
+						<span class="city-name">Los Angeles, CA</span>
+					</div>
+					<div class="col-4 mt-auto">
+						<i class="fa fa-chevron-right fa-3x" style="float: right; color: #925E43; cursor: pointer;" onclick="nextDesigner()"></i>
+					</div>
+				</div>
+				<br><br>
+				<h4 class="mb-3"><i class="fas fa-star mr-2"></i><i class="fas fa-star mr-2"></i><i class="fas fa-star mr-2"></i><i class="fas fa-star mr-2"></i><i class="fas fa-star"></i></h4>
+				<p class="review-des">In need of a living room refresh, Blake worked with his designer Amy to bring a modern and industrial look to his bright and airy California space. Masculine furniture pieces paired with cozy accents and plants made Blake’s space feel just like home and completely “him”.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Features -->
+	<div class="container-fluid p-md-5 p-4 feature">
+		<div class="row">
+			<div class="col-md-3 mb-md-0 mb-3">
+				<h1>Interior design is for everyone.</h1>
+			</div>
+			<div class="col-md-3 mb-md-0 mb-3">
+				<i class="fas fa-home fa-2x" style="color: #B26E4B;"></i>
+				<br><br>
+				<h6><b>Find your happy place</b></h6>
+				<p>You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time. We can create a beautiful space that fits your needs so you don’t have to be embarrassed to host book club next month.</p>
+			</div>
+			<div class="col-md-3 mb-md-0 mb-3">
+				<i class="fas fa-rupee-sign fa-2x" style="color: #B26E4B;"></i>
+				<br><br>
+				<h6><b>Delightfully affordable</b></h6>
+				<p>We believe that interior design should be accessible to everyone. That’s why Havenly packages are designed to be affordable, and our designers are trained to work within your budget.</p>
+			</div>
+			<div class="col-md-3">
+				<i class="fas fa-handshake fa-2x" style="color: #B26E4B;"></i>
+				<br><br>
+				<h6><b>Create a lasting relationship</b></h6>
+				<p>Your Havenly pro is your friend, your guide, and your partner in home design. They’ll take care of your needs, help you create a custom space that grows with you, and they’re only a message away.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Reviews -->
+	<div class="container-fluid p-md-5 p-4" style="background-color: #E0B490;">
+		<div class="row">
+			<div class="col-md-6 mb-md-0 mb-3">
+				<h2 style="color: #B4714E;">Over 100,000 designs completed for happy clients.</h2>
+			</div>
+			<div class="col-md-6 d-flex flex-column">
+				<button class="custom-button shadow ml-auto mt-auto">See all reviews</button>
+			</div>
+		</div>
+		<br>
+		<div class="float-right">
+			<button class="controls prevButton" data-button="reviews"><i class="fas fa-chevron-left"></i></button> <button class="controls nextButton" data-button="reviews"><i class="fas fa-chevron-right"></i></button>
+		</div>
+		<br><br>
+		<div class="review-slider reviews">
+			<div class="p-3">
+				<div class="p-4" style="background-color: #fff;">
+					<p style="color: #CC9F88;">by Jack</p>
+					<h4 class="mb-3"><i class="fab fa-twitter"></i></h4>
+					<h4>Each time I hear, "If only I could afford an interior designer...", I share a like to @Havenly</h4>
+				</div>
+			</div>
+			<div class="p-3">
+				<div class="p-4" style="background-color: #fff;">
+					<p style="color: #CC9F88;">by Bella</p>
+					<h4 class="mb-3"><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i></h4>
+					<h4>So happy with my results</h4>
+					<p>Our designer was so easy to work with and gave us great options that were in line with our taste and budget! Loved the experience and have already been sharing with friends. Will definitely be using Havenly again.</p>
+				</div>
+			</div>
+			<div class="p-3">
+				<div class="p-4" style="background-color: #fff;">
+					<p style="color: #CC9F88;">by Lisa</p>
+					<h4 class="mb-3"><i class="fab fa-twitter"></i></h4>
+					<h4>2019 = the year of adulting. First step: found a new apartment and signed up for @thehavenly to help me design the space 🏡 CC: @ellemot</h4>
+				</div>
+			</div>
+			<div class="p-3">
+				<div class="p-4" style="background-color: #fff;">
+					<p style="color: #CC9F88;">by Jean</p>
+					<h4 class="mb-3"><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i><i class="fas fa-star mr-3"></i></h4>
+					<h4>What a great experience!</h4>
+					<p>What a wonderful experience this has been. Really had fun working with my designer, and very happy with the results!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Banner 2 -->
+	<div class="container-fluid parallax" style="background-image: url('img/full-bleed-image-1.jpg');"></div>
+	</div>
+
+	<!-- Our Partners -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-7 px-0">
+				<img src="img/Havenly_3D_Homepage.jpg" alt="Havenly_3D_Homepage" class="img-fluid">
+			</div>
+			<div class="col-md-5 p-md-5 p-4" style="background-color: #FAEFE6;">
+				<h6 style="color: #B57452"><b>Our partners</b></h6>
+				<br><br>
+				<h1><b>We work with more than 200 vendors, big and small.</b></h1>
+				<br>
+				<p>Our designers thoughtfully source a selection of products, just for you. We partner with an extensive list of sought-after brands, up-and-coming retailers, and local artisans to ensure that every design is uniquely tailored to your style, your needs and your budget.</p>
+				<br>
+				<div class="row">
+					<div class="col-6">
+						<ul class="pl-0" style="list-style-type: none;">
+							<li>West Elm</li>
+							<li>Anthropologie</li>
+							<li>Interior Define</li>
+							<li>Serena &amp; Lily</li>
+							<li>CB2</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ul class="pl-0" style="list-style-type: none;">
+							<li>Pottery Barn</li>
+							<li>Article</li>
+							<li>Minted</li>
+							<li>Surya</li>
+						</ul>
+					</div>
+				</div>
+				<br>
+				<button class="custom-button shadow">Find your style</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="container-fluid p-md-5 p-4" style="background-color: #F6F6F6;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-4">
+					<img src="img/circle.png" alt="circle" class="img-fluid">
+				</div>
+				<div class="col-md-3 col-8 mb-md-0 mb-3">
+					<h6 class="mb-3"><b>Happiness guarantee</b></h6>
+					<p>If you’re not happy, we’re not happy. We work tirelessly to make sure your Havenly experience is delightful. That’s why we offer the Havenly Happiness Guarantee.</p>
+					<div class="d-md-block d-none">
+						<p style="color: #AEB8C0!important;">© 2020 Havenly Inc., All Rights Reserved.</p>
+						<p style="color: #AEB8C0!important;"><a href="#" style="color: #AEB8C0!important;">Find us in the App Store</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">Privacy Policy</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">Terms of Service</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">ADA Accessibility</a></p>
+					</div>
+				</div>
+				<div class="col-md-2 col-4">
+					<h6 class="mb-3"><b>Company</b></h6>
+					<p><a href="#">Careers</a></p>
+					<p><a href="#">Design Careers</a></p>
+					<p><a href="#">Reviews</a></p>
+				</div>
+				<div class="col-md-2 col-4">
+					<h6 class="mb-3"><b>Explore</b></h6>
+					<p><a href="#">Financing</a></p>
+					<p><a href="#">Gift Cards</a></p>
+					<p><a href="#">Refer & Earn</a></p>
+					<p><a href="#">Help Center</a></p>
+					<p><a href="#">Current Promotions</a></p>
+				</div>
+				<div class="col-md-2 col-4 mb-md-0 mb-3">
+					<h6 class="mb-3"><b>Contact Us</b></h6>
+					<p><b>call</b> <a href="#">888.978.3152</a></p>
+					<p><b>text</b> <a href="#">415.687.6139</a></p>
+					<p><b>email</b> <a href="#">hello@havenly.com</a></p>
+					<p><b>instagram</b> <a href="#">@thehavenly</a></p>
+				</div>
+				<div class="col-md-1">
+					<span style="font-size: 1.5rem;"><i class="fab fa-facebook-f mr-3"></i> <i class="fab fa-twitter mr-3"></i> <i class="fab fa-instagram mr-3"></i> <i class="fab fa-pinterest mr-3"></i></span>
+				</div>
+			</div>
+			<br>
+			<div class="d-md-none d-block">
+				<p style="color: #AEB8C0!important;">© 2020 Havenly Inc., All Rights Reserved.</p>
+				<p style="color: #AEB8C0!important;"><a href="#" style="color: #AEB8C0!important;">Find us in the App Store</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">Privacy Policy</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">Terms of Service</a><span class="mx-2">|</span><a href="#" style="color: #AEB8C0!important;">ADA Accessibility</a></p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script type="text/javascript">
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+		function openNav() {
+		    document.getElementById("sideNav").style.width = "100%";
+		}
+
+		/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+		function closeNav() {
+		    document.getElementById("sideNav").style.width = "0";
+		}
+
+		var designerID = 0;
+		var designer = ['Amy Fasnacht', 'Sarah Jones', 'Robyn Pleggenkuhle', 'Pamela Kilyk']
+		var customer = ['Blake F.', 'Emma C.', 'Kory F.', 'Luigi P.']
+		var city = ['Los Angeles, CA', 'New York, NY', 'Denver, CO', 'Los Angeles, CA']
+		var review = ['In need of a living room refresh, Blake worked with his designer Amy to bring a modern and industrial look to his bright and airy California space. Masculine furniture pieces paired with cozy accents and plants made Blake’s space feel just like home and completely “him”.', 'With minimal square footage to work with in her small New York apartment, Emma wanted both a functional and glam space to help her relax and escape the bustle of the city. Emma’s Havenly designer, Sarah, used low-profile lighting, colorful accents, and wood furniture elements to create a cozy bedroom retreat.', 'Searching for a dining room setup that would complement her home’s major renovation, Kory worked with her designer Robyn to create a beautiful, functional space that makes a statement with a stunning mix of wood, stone, dark lines, and deep blue hues.', 'For these Los Angeles homeowners, their space had great bones, but needed a helping hand to find furnishings that would reflect the beautiful architecture. Their designer Pamela used graphic art, bold colors, and modern touches to create the perfect space for relaxing together or hosting friends.'];
+		function nextDesigner() {
+			if(designerID == 3){
+				designerID = 0;
+			}
+			else{
+				designerID++;
+			}
+			$('.design-image').css("background-image", "url(img/homepage-project-"+designerID+".jpg)");
+			$('.designer-name').text(designer[designerID]);
+			$('.customer-name').text(customer[designerID]);
+			$('.city-name').text(city[designerID]);
+			$('.review-des').text(review[designerID]);
+		}
+
+		$(document).ready(function(){
+			$('.review-slider').slick({
+            	autoplay: false,
+            	arrows: false,
+            	dots: false,
+            	pauseOnHover: false,
+      			touchMove: false,
+				infinite: true,
+  				slidesToShow: 3,
+  				slidesToScroll: 1,
+  				adaptiveHeight: true,
+  				responsive: [
+  					{
+				    	breakpoint: 800,
+				      	settings: {
+				        	slidesToShow: 2,
+				        	slidesToScroll: 1
+				      	}
+				    },
+				    {
+				    	breakpoint: 500,
+				      	settings: {
+				        	slidesToShow: 1,
+				        	slidesToScroll: 1
+				      	}
+				    }
+				]
+			});
+
+			$('.quiz-slider').slick({
+            	autoplay: true,
+            	autoplaySpeed: 1000,
+            	arrows: false,
+            	dots: false,
+            	pauseOnHover: false,
+      			touchMove: false,
+				infinite: true,
+  				slidesToShow: 2,
+  				slidesToScroll: 1,
+  				adaptiveHeight: false,
+  				responsive: [
+				    {
+				    	breakpoint: 1100,
+				      	settings: {
+				        	slidesToShow: 1,
+				        	slidesToScroll: 1
+				      	}
+				    }
+				]
+			});
+
+			$('.home-slider').slick({
+				speed: 500,
+  				fade: true,
+  				cssEase: 'linear',
+            	autoplay: true,
+            	autoplaySpeed: 3000,
+            	arrows: false,
+            	dots: false,
+            	pauseOnHover: false,
+      			touchMove: false,
+				infinite: true,
+  				slidesToShow: 1,
+  				slidesToScroll: 1,
+			});
+
+			$('.feature-slider').slick({
+            	dots: true,
+            	fade: true,
+  				slidesToShow: 1,
+  				slidesToScroll: 1,
+  				adaptiveHeight: true,
+  				customPaging: function(slider, i) {
+      				return '<img src="img/f' + i + '.png" alt="logo" class="img-fluid">';
+    			},
+    			useTransform: true,
+			});
+
+			$(window).scroll(function() {
+				if($(this).scrollTop() > 500) { 
+					$('.navbar').addClass('bg-white');
+					$('#collaborate').text('Collaborate with a design pro, all online, starting at $79');
+				}
+				else {
+					$('.navbar').removeClass('bg-white');
+					$('#collaborate').text('');
+				}
+			});
+
+			$("#start-button").click(function(){
+  				$("#start-details").slideToggle();
+  				if ($("#start-button").attr('tag') == "more") {
+  					$("#start-text").hide();
+  					$("#start-button").attr('tag', "less");
+					$(this).html('<i class="fas fa-chevron-down"></i>');
+				} 
+				else {
+					$("#start-button").attr('tag', "more");
+					$("#start-text").show();
+					$(this).html('<i class="fas fa-chevron-up"></i>');
+				}
+			});
+
+			$("#details-button1").click(function(){
+  				$("#more-details1").slideToggle("slow");
+  				if ($("#details-button1").attr('tag') == "more") {
+  					$("#details-button1").attr('tag', "less");
+					$(this).html('Less details <i class="fas fa-chevron-up ml-2"></i>');
+				} 
+				else {
+					$("#details-button1").attr('tag', "more");
+					$(this).html('More details <i class="fas fa-chevron-down ml-2"></i>');
+				}
+			});
+
+			$("#details-button2").click(function(){
+  				$("#more-details2").slideToggle("slow");
+  				if ($("#details-button2").attr('tag') == "more") {
+  					$("#details-button2").attr('tag', "less");
+					$(this).html('Less details <i class="fas fa-chevron-up ml-2"></i>');
+				} 
+				else {
+					$("#details-button2").attr('tag', "more");
+					$(this).html('More details <i class="fas fa-chevron-down ml-2"></i>');
+				}
+			});
+
+			$('.prevButton').click(function(){
+    			$('.'+$(this).data('button')).slick('slickPrev');
+    		});
+	    
+    		$('.nextButton').click(function(){
+		    	$('.'+$(this).data('button')).slick('slickNext');
+	    	});
+		});
+	</script>
+</body>
+</html>
